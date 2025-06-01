@@ -107,84 +107,29 @@ def home():
         <h2 class="text-4xl font-bold mb-8 text-center">Order Products</h2>
         <div class="grid">
           <div class="card">
-            <h3 class="text-xl font-semibold mb-2">ShadowSync VPN</h3>
-            <p class="text-white/80 mb-4">Secure and fast VPN service for anonymous browsing.</p>
-            <a href="/shadowsync-vpn" class="text-accent-text">Order Now</a>
+            <h3 class="text-xl font-semibold mb-2">ShadowV3 Premium</h3>
+            <p class="text-white/80 mb-4">Unlock exclusive features with ShadowV3 Premium subscription.</p>
+            <a href="/shadowv3-premium" class="text-accent-text">Order Now</a>
           </div>
           <div class="card">
-            <h3 class="text-xl font-semibold mb-2">Quantum Encryptor</h3>
-            <p class="text-white/80 mb-4">Advanced encryption software for secure communications.</p>
-            <a href="/quantum-encryptor" class="text-accent-text">Order Now</a>
+            <h3 class="text-xl font-semibold mb-2">ShadowNuker 1 Month</h3>
+            <p class="text-white/80 mb-4">Access ShadowNuker for 1 month with full features.</p>
+            <a href="/shadownuker-1month" class="text-accent-text">Order Now</a>
           </div>
           <div class="card">
-            <h3 class="text-xl font-semibold mb-2">CyberShield Antivirus</h3>
-            <p class="text-white/80 mb-4">Next-gen antivirus protection for all your devices.</p>
-            <a href="/cybershield-antivirus" class="text-accent-text">Order Now</a>
+            <h3 class="text-xl font-semibold mb-2">ShadowNuker 1 Week</h3>
+            <p class="text-white/80 mb-4">Try ShadowNuker with a 1-week subscription.</p>
+            <a href="/shadownuker-1week" class="text-accent-text">Order Now</a>
           </div>
           <div class="card">
-            <h3 class="text-xl font-semibold mb-2">Neural Analytics Suite</h3>
-            <p class="text-white/80 mb-4">AI-powered data analytics for actionable insights.</p>
-            <a href="/neural-analytics" class="text-accent-text">Order Now</a>
+            <h3 class="text-xl font-semibold mb-2">ShadowNuker 1 Year</h3>
+            <p class="text-white/80 mb-4">Get ShadowNuker for a full year at a discounted rate.</p>
+            <a href="/shadownuker-1year" class="text-accent-text">Order Now</a>
           </div>
           <div class="card">
-            <h3 class="text-xl font-semibold mb-2">StreamFlix Premium</h3>
-            <p class="text-white/80 mb-4">Ad-free streaming with exclusive content access.</p>
-            <a href="/streamflix-premium" class="text-accent-text">Order Now</a>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold mb-2">ShadowCloud Storage</h3>
-            <p class="text-white/80 mb-4">Secure cloud storage with unlimited bandwidth.</p>
-            <a href="/shadowcloud-storage" class="text-accent-text">Order Now</a>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold mb-2">CodeMaster IDE</h3>
-            <p class="text-white/80 mb-4">Integrated development environment for coders.</p>
-            <a href="/codemaster-ide" class="text-accent-text">Order Now</a>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold mb-2">AI Chatbot Pro</h3>
-            <p class="text-white/80 mb-4">Customizable AI chatbot for business automation.</p>
-            <a href="/aichatbot-pro" class="text-accent-text">Order Now</a>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold mb-2">DarkNet Firewall</h3>
-            <p class="text-white/80 mb-4">Robust firewall for advanced network security.</p>
-            <a href="/darknet-firewall" class="text-accent-text">Order Now</a>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold mb-2">Quantum Backup</h3>
-            <p class="text-white/80 mb-4">Automated backup solution for data protection.</p>
-            <a href="/quantum-backup" class="text-accent-text">Order Now</a>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold mb-2">ShadowExecutor Pro</h3>
-            <p class="text-white/80 mb-4">Advanced script execution tool for developers.</p>
-            <a href="/shadowexecutor-pro" class="text-accent-text">Order Now</a>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold mb-2">CryptoGuard Wallet</h3>
-            <p class="text-white/80 mb-4">Secure cryptocurrency wallet for all major coins.</p>
-            <a href="/cryptoguard-wallet" class="text-accent-text">Order Now</a>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold mb-2">SmartHome Hub</h3>
-            <p class="text-white/80 mb-4">Centralized control for your smart home devices.</p>
-            <a href="/smarthome-hub" class="text-accent-text">Order Now</a>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold mb-2">ShadowVPN Router</h3>
-            <p class="text-white/80 mb-4">Pre-configured router for instant VPN protection.</p>
-            <a href="/shadowvpn-router" class="text-accent-text">Order Now</a>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold mb-2">DevOps Toolkit</h3>
-            <p class="text-white/80 mb-4">Comprehensive tools for streamlined DevOps workflows.</p>
-            <a href="/devops-toolkit" class="text-accent-text">Order Now</a>
-          </div>
-          <div class="card">
-            <h3 class="text-xl font-semibold mb-2">AR Developer Kit</h3>
-            <p class="text-white/80 mb-4">Tools and SDK for building augmented reality apps.</p>
-            <a href="/ar-developer-kit" class="text-accent-text">Order Now</a>
+            <h3 class="text-xl font-semibold mb-2">ShadowNuker Lifetime</h3>
+            <p class="text-white/80 mb-4">Lifetime access to ShadowNuker with all updates included.</p>
+            <a href="/shadownuker-lifetime" class="text-accent-text">Order Now</a>
           </div>
         </div>
       </div>
