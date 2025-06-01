@@ -1,0 +1,404 @@
+/* style.css */
+:root {
+  --cl-accent: 101, 113, 255;
+  --cl-background: 6, 6, 12;
+  --cl-card: 11, 11, 17;
+  --cl-t-primary: 255, 255, 255;
+  --cl-t-accent: 255, 255, 255;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Play", sans-serif;
+  background-color: rgb(var(--cl-background));
+  color: rgb(var(--cl-t-primary));
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.accent-text { color: rgb(var(--cl-accent)); }
+.card { background: rgba(var(--cl-card), 0.75); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; }
+a { text-decoration: none; color: inherit; transition: color 0.3s ease; }
+a:hover { color: rgb(var(--cl-accent)); }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(var(--cl-card), 0.9);
+  backdrop-filter: blur(5px);
+}
+
+nav .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav .nav-links {
+  display: none;
+  gap: 1.5rem;
+}
+
+nav .nav-links.show {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: rgba(var(--cl-card), 0.9);
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(var(--cl-card), 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  padding: 0.25rem;
+  min-width: 8rem;
+  z-index: 20;
+}
+
+/* Nested Dropdown (Delta Executor) */
+.dropdown .dropdown .dropdown-menu {
+  top: 0;
+  left: -100%;
+  margin-left: -0.25rem;
+  min-width: 7rem;
+}
+
+/* Hover and Show States */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.25rem 0.5rem;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(101, 113, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+  nav .nav-links { display: flex; }
+  nav button { display: none; }
+  nav .nav-links.show { flex-direction: row; padding: 0; }
+}
+
+section {
+  padding: 6rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background: rgba(var(--cl-card), 0.9);
+}
+
+/* Project Page Specific */
+.project-details {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.project-details .card {
+  padding: 2rem;
+}
+
+.project-details .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  border: 2px solid rgb(var(--cl-accent));
+  color: rgb(var(--cl-accent));
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.project-details .btn:hover {
+  background: rgb(var(--cl-accent));
+  color: white;
+  box-shadow: 0 0 15px rgba(101, 113, 255, 0.7);
+}
+
+.features {
+  margin-top: 2rem;
+}
+
+.features ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features li {
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.features li::before {
+  content: '▹';
+  color: rgb(var(--cl-accent));
+  margin-right: 0.5rem;
+}
+
+/* Delta Page: 2x2 Grid Layout */
+#delta .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Responsive: Single column on small screens */
+@media (max-width: 768px) {
+  #delta .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card styles */
+#delta .card {
+  padding: 2rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+#delta .card:hover {
+  box-shadow: 0 0 20px rgba(101, 113, 255, 0.5);
+}
+
+/* Description and details */
+#delta .description {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+#delta .details {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: left;
+}
+#delta .details p {
+  margin: 0.5rem 0;
+}
+
+/* Status Indicator Styles for Delta Page */
+#delta .status-container {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+#delta .status-indicator {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #00ff00;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  animation: pulse 2s infinite;
+}
+#delta .status-down {
+  background: #ff3333;
+  animation: none;
+}
+#delta .status-text {
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+/* Base button */
+#delta .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-radius: 6px;
+  background: rgba(var(--cl-card), 0.75);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(101, 113, 255, 0.2);
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+}
+
+/* iOS first button */
+#delta .btn-ios {
+  border: 1px solid #00ccff;
+  color: #00ccff;
+}
+#delta .btn-ios:hover {
+  background: #00ccff;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 204, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+/* iOS second button (orange style) */
+#delta .btn-ios-alt {
+  border: 1px solid #ff9900;
+  color: #ff9900;
+}
+#delta .btn-ios-alt:hover {
+  background: #ff9900;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 153, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Android */
+#delta .btn-android {
+  border: 1px solid #00ff99;
+  color: #00ff99;
+}
+#delta .btn-android:hover {
+  background: #00ff99;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 255, 153, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Windows */
+#delta .btn-windows {
+  border: 1px solid #ff3366;
+  color: #ff3366;
+}
+#delta .btn-windows:hover {
+  background: #ff3366;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 51, 102, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Active button effect */
+#delta .btn:active {
+  transform: scale(0.98);
+}
+
+/* Shiny effect */
+#delta .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(101, 113, 255, 0.3), transparent);
+  transition: 0.5s;
+}
+#delta .btn:hover::before {
+  left: 100%;
+}
+
+/* Button icons */
+#delta .btn-ios::after,
+#delta .btn-ios-alt::after,
+#delta .btn-android::after,
+#delta .btn-windows::after {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 0.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#delta .btn-ios::after,
+#delta .btn-ios-alt::after {
+  background-image: url("https://img.icons8.com/ios-filled/50/ffffff/mac-os.png");
+}
+#delta .btn-android::after {
+  background-image: url("https://img.icons8.com/ios-filled/50/ffffff/android.png");
+}
+#delta .btn-windows::after {
+  background-image: url("https://img.icons8.com/ios-filled/50/ffffff/windows-10.png");
+}
+
+/* Delta Status Page: 2x2 Grid Layout */
+#delta-status .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Responsive: Single column on small screens */
+@media (max-width: 768px) {
+  #delta-status .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Status Indicator Styles for Status Page */
+#delta-status .status-indicator {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #00ff00;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  animation: pulse 2s infinite;
+}
+
+#delta-status .status-down {
+  background: #ff3333;
+  animation: none;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(0, 255, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 255, 0, 0); }
+}
+
+#delta-status .details {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+#delta-status .details p {
+  margin: 0.5rem 0;
+}
+
+#delta-status .card {
+  padding: 2rem;
+  text-align: center;
+}
