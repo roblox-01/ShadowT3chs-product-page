@@ -109,27 +109,27 @@ def home():
           <div class="card">
             <h3 class="text-xl font-semibold mb-2">ShadowV3 Premium</h3>
             <p class="text-white/80 mb-4">Unlock exclusive features with ShadowV3 Premium subscription.</p>
-            <a href="/shadowv3-premium" class="text-accent-text">Order Now</a>
+            <a href="https://buy.stripe.com/fZufZh6aA44f6VV6Vg2Ji00" class="text-accent-text">Order Now</a>
           </div>
           <div class="card">
             <h3 class="text-xl font-semibold mb-2">ShadowNuker 1 Month</h3>
             <p class="text-white/80 mb-4">Access ShadowNuker for 1 month with full features.</p>
-            <a href="/shadownuker-1month" class="text-accent-text">Order Now</a>
+            <a href="https://buy.stripe.com/28E9AT8iI58jcgffrM2Ji01" class="text-accent-text">Order Now</a>
           </div>
           <div class="card">
             <h3 class="text-xl font-semibold mb-2">ShadowNuker 1 Week</h3>
             <p class="text-white/80 mb-4">Try ShadowNuker with a 1-week subscription.</p>
-            <a href="/shadownuker-1week" class="text-accent-text">Order Now</a>
+            <a href="https://buy.stripe.com/7sYcN50QgbwH0xxa7s2Ji02" class="text-accent-text">Order Now</a>
           </div>
           <div class="card">
             <h3 class="text-xl font-semibold mb-2">ShadowNuker 1 Year</h3>
             <p class="text-white/80 mb-4">Get ShadowNuker for a full year at a discounted rate.</p>
-            <a href="/shadownuker-1year" class="text-accent-text">Order Now</a>
+            <a href="https://buy.stripe.com/cNifZh42s1W73JJ6Vg2Ji03" class="text-accent-text">Order Now</a>
           </div>
           <div class="card">
             <h3 class="text-xl font-semibold mb-2">ShadowNuker Lifetime</h3>
             <p class="text-white/80 mb-4">Lifetime access to ShadowNuker with all updates included.</p>
-            <a href="/shadownuker-lifetime" class="text-accent-text">Order Now</a>
+            <a href="https://buy.stripe.com/dRm14n42sdEP7ZZcfA2Ji04" class="text-accent-text">Order Now</a>
           </div>
         </div>
       </div>
